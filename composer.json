@@ -1,0 +1,19 @@
+{
+    "name": "icurdinj/config",
+    "description": "Simple usage of config files.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Čurdinjaković",
+            "email": "icurdinj@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "icurdinj\\Config\\": "src/"
+        }
+    }
+}
