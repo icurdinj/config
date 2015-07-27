@@ -9,6 +9,9 @@
         }
     ],
     "require": {
+        "php": ">=5.2.7"
+    },
+    "suggest": {
         "php": ">=5.6.1"
     },
     "autoload": {
