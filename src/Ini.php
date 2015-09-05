@@ -21,24 +21,14 @@ class Ini implements ConfigInterface {
     }
 
     /**
-     * Returns the whole config array.
-     *
-     * @return array
-     */
-    public function get(){
-        return $this->config;
-    }
-
-    /**
      * Returns a config section.
      *
      * @param string $section
-     * @return array
+     * @return \icurdinj\Config\Section
      * @throws UnexpectedValueException When the given section doesn't exist.
      */
     public function getSection($section) {
-        if (isset($this->config[$section])) return $this->config[$section];
+        if (isset($this->config[$section])) return new Section($this->config[$section]);
         else throw new \UnexpectedValueException('Section does not exist.');
     }
-
 }
